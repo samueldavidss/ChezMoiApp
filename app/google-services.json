@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "286297017171",
+    "firebase_url": "https://chezmoiapp-bd05b.firebaseio.com",
+    "project_id": "chezmoiapp-bd05b",
+    "storage_bucket": "chezmoiapp-bd05b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286297017171:android:dbc22a4a5bfc2f37",
+        "android_client_info": {
+          "package_name": "com.example.samuelsanchez.chezmoiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286297017171-1k2j08lenckccsjttd21dkajeda9e6i4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samuelsanchez.chezmoiapp",
+            "certificate_hash": "3d738a3446a7ad229476b2dbe4dbaebe2d138dae"
+          }
+        },
+        {
+          "client_id": "286297017171-8a4tmanmugasp4q8n2pqanfin717qjgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samuelsanchez.chezmoiapp",
+            "certificate_hash": "ad25e51afdf301b45ac15677a8b00fe4733135c0"
+          }
+        },
+        {
+          "client_id": "286297017171-n3m3jlgf8km1a3d39lgf58b0a7q3pups.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samuelsanchez.chezmoiapp",
+            "certificate_hash": "608d158b76e799053d7e116afdd71a5499dff912"
+          }
+        },
+        {
+          "client_id": "286297017171-jbu90k4jpglp0e38ftbmepbr46crituk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg4GHZQNn7L1ZvH7Vlx-47DYUz4qVMmUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286297017171-jbu90k4jpglp0e38ftbmepbr46crituk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286297017171:android:cdcf4f713379e041",
+        "android_client_info": {
+          "package_name": "com.example.samuel.chezmoiapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286297017171-q91q0liuh86pgu650io00f1c1bfeh2f6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samuel.chezmoiapp2",
+            "certificate_hash": "3d738a3446a7ad229476b2dbe4dbaebe2d138dae"
+          }
+        },
+        {
+          "client_id": "286297017171-jbu90k4jpglp0e38ftbmepbr46crituk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg4GHZQNn7L1ZvH7Vlx-47DYUz4qVMmUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286297017171-jbu90k4jpglp0e38ftbmepbr46crituk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

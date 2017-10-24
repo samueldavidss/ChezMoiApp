@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    tools:context="com.example.samuelsanchez.chezmoiapp.Views.DrawableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="120dp"
+        android:layout_marginTop="54dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:siBorderWidth="6dp"
+        android:src="@mipmap/ic_launcher"
+        app:siBorderColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <View
+        android:background="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/logout"
+            android:textColor="@android:color/white"
+            android:paddingRight="16dp"
+            android:text="Cerrar Secion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
