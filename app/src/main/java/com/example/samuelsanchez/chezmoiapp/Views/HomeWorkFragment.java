@@ -23,8 +23,6 @@ public class HomeWorkFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
     }
 
     private PendingAdapter adapter;
@@ -45,17 +43,12 @@ public class HomeWorkFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        RecyclerView recyclerView = view.findViewById(R.id.homeWorkRV);
+        RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
 
-        PendingAdapter adapter = new PendingAdapter();
+        adapter = new PendingAdapter();
         recyclerView.setAdapter(adapter);
-
-
-
-
 
 
     }

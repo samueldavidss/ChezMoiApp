@@ -31,8 +31,8 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
         TextView name,local, descripcion;
         public pendingHolder(View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.nameEt);
-            local=itemView.findViewById(R.id.localEt);
+            name = (TextView) itemView.findViewById(R.id.PendingsTv);
+            //local=itemView.findViewById(R.id.);
            // descripcion=itemView.findViewById(R.id.descripcionEt);
         }
     }

@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.example.samuelsanchez.chezmoiapp.Data.CurrentUser;
 import com.example.samuelsanchez.chezmoiapp.R;
-import com.example.samuelsanchez.chezmoiapp.Views.LoginActivity;
 import com.firebase.ui.auth.AuthUI;
 import com.frosquivel.magicalcamera.MagicalCamera;
 import com.frosquivel.magicalcamera.MagicalPermissions;
@@ -46,7 +45,7 @@ public class DrawableFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        TextView  logout = view.findViewById(R.id.logout);
+        TextView  logout = (TextView) view.findViewById(R.id.logout);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +63,7 @@ public class DrawableFragment extends Fragment {
             }
         });
 
-        TextView userEmail = view.findViewById(R.id.emailTV);
+        TextView userEmail = (TextView) view.findViewById(R.id.emailTV);
         userEmail.setText(new CurrentUser().email());
 
     }
