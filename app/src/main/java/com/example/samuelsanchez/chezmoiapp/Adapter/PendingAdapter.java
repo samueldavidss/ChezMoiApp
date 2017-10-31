@@ -22,7 +22,7 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
     @Override
     protected void populateViewHolder(pendingHolder viewHolder, Pending model, int position) {
         viewHolder.name.setText(model.getName());
-        viewHolder.local.setText(model.getLocal());
+       // viewHolder.local.setText(model.getLocal());
 
     }
 
