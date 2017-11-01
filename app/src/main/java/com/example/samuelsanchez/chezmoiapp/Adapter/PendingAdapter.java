@@ -22,7 +22,7 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
     @Override
     protected void populateViewHolder(pendingHolder viewHolder, Pending model, int position) {
         viewHolder.name.setText(model.getName());
-       // viewHolder.local.setText(model.getLocal());
+        viewHolder.descripcion.setText(model.getReference());
 
     }
 
@@ -33,7 +33,7 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.PendingsTv);
             //local=itemView.findViewById(R.id.);
-           // descripcion=itemView.findViewById(R.id.descripcionEt);
+            descripcion= (TextView) itemView.findViewById(R.id.ReferenceTv);
         }
     }
 

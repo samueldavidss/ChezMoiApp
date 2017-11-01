@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,17 +17,16 @@
 
     <EditText
         android:id="@+id/localEt"
-        android:hint="Colocar Local"
+        android:hint="Colocar Tarea"
         android:textSize="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/descripcionEt"
         android:textSize="16dp"
-        android:hint="descricpcion de actividad"
+        android:hint="Descricpcion de actividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
     <Button
         android:layout_gravity="center_horizontal"
@@ -36,7 +34,6 @@
         android:text="Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
 
 
 </LinearLayout>
