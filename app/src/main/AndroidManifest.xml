@@ -27,7 +27,8 @@
             android:name=".Main.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Adapter.PendingActivity"></activity>
+        <activity android:name=".Adapter.PendingActivity" />
+        <activity android:name=".Adapter.ChangeActivity"></activity>
     </application>
 
 </manifest>

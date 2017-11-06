@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samuelsanchez.chezmoiapp.Adapter.ChangeActivity">
+
+
+
+
+   <TextView
+       android:paddingLeft="10dp"
+       android:text="Indicar Tarea"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+   <EditText
+       android:paddingLeft="10dp"
+       android:id="@+id/nameChangeET"
+       android:hint="Breve descripcion"
+       android:textSize="16dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <TextView
+       android:text="Lugar"
+       android:paddingLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <EditText
+       android:paddingLeft="10dp"
+       android:id="@+id/SiteChangeEt"
+       android:hint="Lugar Tarea"
+       android:textSize="16dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <TextView
+       android:text="Descripcion"
+       android:paddingLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+   <EditText
+       android:paddingLeft="10dp"
+       android:id="@+id/descripcionChangeEt"
+       android:textSize="16dp"
+       android:hint="Descricpcion de actividad"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+
+   <Button
+       android:id="@+id/changeBtn"
+       android:text="Actualizar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.samuelsanchez.chezmoiapp.Views;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,13 +11,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.samuelsanchez.chezmoiapp.Adapter.ChangeActivity;
 import com.example.samuelsanchez.chezmoiapp.Adapter.PendingAdapter;
 import com.example.samuelsanchez.chezmoiapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeWorkFragment extends Fragment {
+public class HomeWorkFragment extends Fragment implements ListenerPending {
 
 
     @Override
@@ -47,8 +49,17 @@ public class HomeWorkFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
 
-        adapter = new PendingAdapter();
+        adapter = new PendingAdapter(this);
         recyclerView.setAdapter(adapter);
+    }
+    @Override
+    public void click(String key, String name, String reference, String site) {
+        Intent intent = new Intent(getContext(),ChangeActivity.class);
+        intent.putExtra("Key",key);
+        intent.putExtra("Name" ,name);
+        intent.putExtra("Description", reference);
+        intent.putExtra("Site",site);
+        startActivity(intent);
 
 
     }

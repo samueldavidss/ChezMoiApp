@@ -20,6 +20,12 @@ public class Nodes {
         return root.child("tarea").orderByValue();
     }
 
+    public DatabaseReference pending(String key) {
+        return pendings().child(key);
+    }
+    public DatabaseReference nameModification(String name) {
+        return pendings().child(name);
+    }
 
 
 

@@ -24,25 +24,24 @@ public class PendingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pending);
         final EditText nameEt = (EditText) findViewById(R.id.nameEt);
         final EditText descriptionEt = (EditText) findViewById(R.id.descripcionEt);
-        final EditText localEt = (EditText) findViewById(R.id.localEt);
+        final EditText SiteEt = (EditText) findViewById(R.id.SiteEt);
 
         Button saveBtn = (Button) findViewById(R.id.saveBtn);
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String key = dbRef.push().getKey();
                 Pending pending = new Pending();
                 pending.setReference(String.valueOf(descriptionEt.getText()));
                 pending.setName(String.valueOf(nameEt.getText()));
-                pending.setLocal(String.valueOf(localEt.getText()));
+                pending.setSite(String.valueOf(SiteEt.getText()));
                 pending.setKey(key);
                 dbRef.child(key).setValue(pending);
-
                 Intent intent = new Intent(PendingActivity.this, MainActivity.class);
                 startActivity(intent);
-
             }
+
+
         });
     }
 

@@ -6,10 +6,19 @@ package com.example.samuelsanchez.chezmoiapp.Models;
 
 public class Pending {
 
-    public String reference, name, key;
+    public String reference, name, key, site;
     public String local;
 
     public Pending() {
+    }
+
+
+    public String getSite() {
+        return site;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
     }
 
     public String getKey() {
