@@ -32,15 +32,12 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listenerPending.click(model.getKey(),model.getName(),model.getReference(),model.getSite());
+                listenerPending.click(model.getKey(),model.getName(),model.getReference(),model.getSite(),model.getValue(),model.getDate());
 
             }
         });
 
     }
-
-
-
 
     public static class pendingHolder extends RecyclerView.ViewHolder {
 
@@ -52,10 +49,6 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
             descripcion= (TextView) itemView.findViewById(R.id.ReferenceTv);
         }
 
-
-
-
     }
-
 
 }

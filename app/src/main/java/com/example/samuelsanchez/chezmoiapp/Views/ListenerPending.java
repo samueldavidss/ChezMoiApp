@@ -5,7 +5,7 @@ package com.example.samuelsanchez.chezmoiapp.Views;
  */
 
 public interface ListenerPending {
-    void click (String key,String name,String description, String site); //se coloca valor name
+    void click (String key,String name,String description, String site, Integer value, String date); //se coloca valor homeWork
 
 
 }

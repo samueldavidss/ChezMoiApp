@@ -46,6 +46,18 @@ public class DrawableFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TextView  logout = (TextView) view.findViewById(R.id.logout);
+        TextView finance = (TextView) view.findViewById(R.id.StarfinanceTv);
+
+
+        finance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),FinanceActivity.class);
+                startActivity(intent);
+                getActivity().finish();
+
+            }
+        });
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +73,7 @@ public class DrawableFragment extends Fragment {
                         });
 
             }
+
         });
 
         TextView userEmail = (TextView) view.findViewById(R.id.emailTV);

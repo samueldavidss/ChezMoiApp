@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.samuelsanchez.chezmoiapp.Data.CurrentUser;
 import com.example.samuelsanchez.chezmoiapp.Main.MainActivity;
+import com.example.samuelsanchez.chezmoiapp.Models.Users;
 import com.example.samuelsanchez.chezmoiapp.R;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ResultCodes;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Arrays;
 
@@ -34,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setProviders(Arrays.asList(
-                                new AuthUI.IdpConfig.Builder(AuthUI.EMAIL_PROVIDER).build()/*,
-                                        new AuthUI.IdpConfig.Builder(AuthUI.GOOGLE_PROVIDER).build(),
+                                new AuthUI.IdpConfig.Builder(AuthUI.EMAIL_PROVIDER).build(),
+                                        new AuthUI.IdpConfig.Builder(AuthUI.GOOGLE_PROVIDER).build()/*,
                                         new AuthUI.IdpConfig.Builder(AuthUI.TWITTER_PROVIDER).build()*/))
                         .setTheme(R.style.LoginTheme)
                         .build(),
@@ -56,6 +59,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void logged(){
+        DatabaseReference firebaseDatabase = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference dbRef = firebaseDatabase.child("todo").child(new CurrentUser().getCurrentUser().getUid());
+
+        Users user = new Users();
+        user.setEmail(new CurrentUser().getCurrentUser().getEmail());
+        dbRef.setValue(user);
+
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();

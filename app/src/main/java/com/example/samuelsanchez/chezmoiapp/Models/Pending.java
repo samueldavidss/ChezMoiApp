@@ -6,12 +6,38 @@ package com.example.samuelsanchez.chezmoiapp.Models;
 
 public class Pending {
 
-    public String reference, name, key, site;
+    public String reference, name, key, site, date;
     public String local;
+    public boolean status;
+    public Integer value;
+
 
     public Pending() {
     }
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
 
     public String getSite() {
         return site;
@@ -54,5 +80,6 @@ public class Pending {
     public void setReference(String reference) {
         this.reference = reference;
     }
+
 }
 

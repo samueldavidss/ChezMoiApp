@@ -11,21 +11,13 @@ import com.google.firebase.database.Query;
 public class Nodes {
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference();
 
-    public DatabaseReference pendings(){
 
-        return root.child("tareas");
-    }
     public Query query(){
 
         return root.child("tarea").orderByValue();
     }
 
-    public DatabaseReference pending(String key) {
-        return pendings().child(key);
-    }
-    public DatabaseReference nameModification(String name) {
-        return pendings().child(name);
-    }
+
 
 
 

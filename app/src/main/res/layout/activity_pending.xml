@@ -23,6 +23,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/buyBtn"
+        android:text="compra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/costEt"
+        android:hint="total de compra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<!--
     <TextView
         android:text="Lugar"
         android:paddingLeft="10dp"
@@ -48,6 +61,7 @@
         android:hint="Descricpcion de actividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+        -->
 
     <Button
         android:layout_gravity="center_horizontal"
