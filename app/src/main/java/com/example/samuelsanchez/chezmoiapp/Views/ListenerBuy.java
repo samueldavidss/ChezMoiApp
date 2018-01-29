@@ -6,5 +6,5 @@ package com.example.samuelsanchez.chezmoiapp.Views;
 
 public interface ListenerBuy {
 
-   void click (String key, String description, String date, int cost, String user);
+   void click (String key, String description, int cost, String user, String date);
 }

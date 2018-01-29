@@ -31,7 +31,7 @@
         <activity android:name=".Adapter.PendingActivity" />
         <activity android:name=".Adapter.ChangeActivity" />
         <activity android:name=".Adapter.BuyActivity" />
-        <activity android:name=".Adapter.BuyAdapter"></activity>
+        <activity android:name=".Adapter.BuyAdapter"/>
     </application>
 
 </manifest>

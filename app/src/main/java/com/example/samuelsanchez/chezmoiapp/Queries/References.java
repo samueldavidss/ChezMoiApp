@@ -14,13 +14,13 @@ public class References {
     DatabaseReference firebaseDatabase = FirebaseDatabase.getInstance().getReference();
 
     public DatabaseReference userReference (){
-
         return firebaseDatabase.child("user");
     }
 
     public DatabaseReference todoReference(){
         return firebaseDatabase.child("Todo");
     }
+
     public DatabaseReference buyReference(){
         return firebaseDatabase.child("Buy");
     }

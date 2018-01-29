@@ -6,7 +6,7 @@ package com.example.samuelsanchez.chezmoiapp.Models;
 
 public class Pending {
 
-    public String reference, name, key, site, date;
+    public String reference, name, key, site;
     public String local;
     public boolean status;
     public Integer value;
@@ -15,13 +15,6 @@ public class Pending {
     public Pending() {
     }
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
 
     public boolean isStatus() {
         return status;

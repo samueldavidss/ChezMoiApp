@@ -29,10 +29,11 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
         viewHolder.name.setText(model.getName());
         viewHolder.site.setText(model.getSite());
         viewHolder.descripcion.setText(model.getReference());
+
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listenerPending.click(model.getKey(),model.getName(),model.getReference(),model.getSite(),model.getValue(),model.getDate());
+                listenerPending.click(model.getKey(),model.getName(),model.getReference(),model.getSite(),model.getValue());
 
             }
         });
@@ -46,7 +47,7 @@ public class PendingAdapter extends FirebaseRecyclerAdapter< Pending, PendingAda
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.PendingsTv);
             site = (TextView) itemView.findViewById(R.id.SiteTv);
-            descripcion= (TextView) itemView.findViewById(R.id.ReferenceTv);
+            descripcion = (TextView) itemView.findViewById(R.id.ReferenceTv);
         }
 
     }

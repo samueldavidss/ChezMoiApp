@@ -1,7 +1,6 @@
 package com.example.samuelsanchez.chezmoiapp.Views;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,32 +10,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.samuelsanchez.chezmoiapp.Adapter.ChangeActivity;
-import com.example.samuelsanchez.chezmoiapp.Adapter.PendingAdapter;
+import com.example.samuelsanchez.chezmoiapp.Adapter.BuyAdapter;
 import com.example.samuelsanchez.chezmoiapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeWorkFragment extends Fragment implements ListenerPending {
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+public class BuyFragment extends Fragment implements ListenerBuy {
 
-    private PendingAdapter adapter;
 
-    public HomeWorkFragment() {
+    public BuyFragment() {
         // Required empty public constructor
     }
+
+    private BuyAdapter buyAdapter;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_work, container, false);
+        return inflater.inflate(R.layout.fragment_buy, container, false);
     }
-
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
@@ -44,24 +39,15 @@ public class HomeWorkFragment extends Fragment implements ListenerPending {
         RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
-        adapter = new PendingAdapter(this);
-        recyclerView.setAdapter(adapter);
+        buyAdapter = new BuyAdapter(this);
+        recyclerView.setAdapter(buyAdapter);
+
     }
+
 
 
     @Override
-    public void click(String key, String name, String reference, String site, Integer value) {
-        Intent intent = new Intent(getContext(),ChangeActivity.class);
+    public void click(String key, String description, int cost, String user, String date) {
 
-        intent.putExtra("Key",key);
-        intent.putExtra("Name" ,name);
-        intent.getIntExtra("value",value);
-
-
-        // intent.putExtra("Description", reference);
-        // intent.putExtra("Site",site);
-        startActivity(intent);
     }
 }
-
-

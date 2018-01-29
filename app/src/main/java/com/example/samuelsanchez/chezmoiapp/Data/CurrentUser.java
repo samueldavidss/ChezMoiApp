@@ -18,13 +18,18 @@ public class CurrentUser {
     public String getUid(){
         return currentUser.getUid();
     }
-    public String email(){
 
+    public String email(){
         return getCurrentUser().getEmail();
     }
-    public String sanitaEmail (String email){
 
-        return email.replace("@","AT").replace(".","DOT");
+    public String getEmail(){
+        return currentUser.getEmail();
+    }
+
+    public String sanitaEmail (){
+
+        return currentUser.getEmail().replace("@","AT").replace(".","DOT");
 
     }
 

@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.samuelsanchez.chezmoiapp.Data.CurrentUser;
 import com.example.samuelsanchez.chezmoiapp.Main.MainActivity;
 import com.example.samuelsanchez.chezmoiapp.Models.Pending;
 import com.example.samuelsanchez.chezmoiapp.Queries.References;
@@ -16,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 
 public class PendingActivity extends AppCompatActivity {
 
-    DatabaseReference dbRef = new References().todoReference().child(new CurrentUser().getUid());
+    DatabaseReference dbRef = new References().todoReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

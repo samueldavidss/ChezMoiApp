@@ -6,9 +6,9 @@ package com.example.samuelsanchez.chezmoiapp.Models;
 
 public class Buy {
     public String description;
-    public String Date;
+
     public int cost;
-    public String user, key;
+    public String user, key, date;
 
 
     public Buy() {
@@ -39,11 +39,11 @@ public class Buy {
     }
 
     public String getDate() {
-        return Date;
+        return date;
     }
 
     public void setDate(String date) {
-        Date = date;
+        this.date = date;
     }
 
     public int getCost() {
